@@ -1,4 +1,4 @@
-// Arreglos en Javascript.
+// ARREGLOS.
 
 let persona = ["Malena", "Analuz", "Gonzalez"];
 
@@ -25,7 +25,26 @@ let persona = ["Malena", "Analuz", "Gonzalez"];
 // persona.sort();
 // persona.reverse();
 
-let numero1 = 10;
-let numero2 = 5;
-let resultado = numero1 + numero2;
-document.write(resultado);
+// -------------------------------------------------------------
+// -------------------------------------------------------------
+// FUNCIONES.
+// Las variables que necesitan las funciones se llaman argumentos, es lo que va entre párentesis después del nombre de la función. Y antes de usarlos se debe indicar cuantos necesita y el nombre de cada uno.
+
+function suma(numero1, numero2) {
+  let resultado = numero1 + numero2;
+  return resultado;
+}
+
+// Para ver el resultado se debe llamar a la función con el nombre que se coloco y entre parentesis los argumentos de esta. En este caso los números que queremos que sume.
+
+document.write(suma(20, 18));
+
+// Se puede llamar nuevamente a la función para hacer otra suma con argumentos distintos pero se debe de colocar la misma cantidad que se declararon o dara un error.
+
+// Los párentesis son obligatorios siempre al momento en que se llama a la función.
+
+// *Funciones autoinvocadas: son funciones que se llaman a sí mismas después de ser declaradas, es decir, que se ejecután de manera inmediata despúes de ser creadas.
+(function () {
+  alert("Hola mundo");
+  //   Todo lo que este acá adentro se va a ejecutar cuando se ejecute la página.
+})();
